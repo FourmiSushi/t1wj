@@ -1,0 +1,83 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scenes/Demo/demo.gd" type="Script" id=1]
+
+[node name="3" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="function" type="OptionButton" parent="."]
+margin_left = 97.0
+margin_top = 86.0
+margin_right = 246.0
+margin_bottom = 125.0
+text = "start_root"
+items = [ "start_root", null, false, 0, null, "to", null, false, 1, null, "replace", null, false, 2, null, "back", null, false, 3, null, "back_until", null, false, 4, null ]
+selected = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="arg1" type="OptionButton" parent="."]
+margin_left = 269.0
+margin_top = 87.0
+margin_right = 516.0
+margin_bottom = 127.0
+text = "Demo1"
+items = [ "Demo1", null, false, 0, null, "Demo2", null, false, 1, null, "Demo3", null, false, 2, null ]
+selected = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="arg2" type="OptionButton" parent="."]
+margin_left = 549.0
+margin_top = 84.0
+margin_right = 825.0
+margin_bottom = 126.0
+text = "Demo1"
+items = [ "Demo1", null, false, 0, null, "Demo2", null, false, 1, null, "Demo3", null, false, 2, null ]
+selected = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="execute" type="Button" parent="."]
+margin_left = 861.0
+margin_top = 86.0
+margin_right = 959.0
+margin_bottom = 124.0
+text = "Execute"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="scene_number" type="Label" parent="."]
+margin_left = 98.1354
+margin_top = 35.4949
+margin_right = 257.135
+margin_bottom = 73.4949
+text = "3"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="stack_view" type="TextEdit" parent="."]
+margin_left = 103.0
+margin_top = 164.0
+margin_right = 968.0
+margin_bottom = 572.0
+readonly = true
+show_line_numbers = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="item_selected" from="function" to="." method="_on_function_item_selected"]
+[connection signal="item_selected" from="arg1" to="." method="_on_arg1_item_selected"]
+[connection signal="item_selected" from="arg2" to="." method="_on_arg2_item_selected"]
+[connection signal="pressed" from="execute" to="." method="_on_execute_pressed"]
