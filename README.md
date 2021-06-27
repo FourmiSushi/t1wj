@@ -47,3 +47,4 @@
 ## 参考文献
 
 [シングルトン(自動読み込み) — Godot Engine (stable)の日本語のドキュメント](https://docs.godotengine.org/ja/stable/getting_started/step_by_step/singletons_autoload.html) 2021/06/27
+[Diamond-based Screen Transition - Godot Shaders](https://godotshaders.com/shader/diamond-based-screen-transition/) 2021/06/27
