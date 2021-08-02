@@ -10,7 +10,7 @@ config_version=4
 
 [application]
 
-config/name="ScreenTransition"
+config/name="t1wj"
 config/icon="res://icon.png"
 
 [autoload]
